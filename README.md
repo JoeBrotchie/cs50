@@ -1,2 +1,2 @@
-# cs50
- CS50x Course Projects
+# cs50x
+ My course work for Harvard's CS50x.
