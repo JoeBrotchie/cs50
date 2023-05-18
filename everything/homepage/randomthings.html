@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Codystar">
+        <title>Random things</title>
+    </head>
+    <body>
+        <main class="mainBackground">
+
+          <header class="headerBackground">
+            <a href="https://github.com/JoeBrotchie"><img class="githubLink" src="img/github_PNG20-2475340993" alt="github"></a>
+            <p class="text randomThingsTitle">Random Things</p>
+            <ul>
+                <li class="randomThings1">Hot chocolate is better then any other drink.</li>
+                <li class="randomThings">Did you know China owns every panda in the world.</li>
+                <li class="randomThings">I have long hair rn as im probibly going to go bald in my late 20s.</li>
+                <li class="randomThings">My all time favourite game is Halo Reach.</li>
+                <li class="randomThings">Did you know if you fold a piece of paper 42 times you will get to the moon and if you fold it 103 times you get out side the observable universe (around 93 billion light-years away).</li>
+                <li class="randomThings">Fall is the best time of year.</li>
+                <li class="randomThings">Australia is wider than the moon.</li>
+                <li class="randomThings">I love tennis but watching it is so boring.</li>
+            </ul>
+          </header>
+
+          <nav class="navBackground">
+              <div class="accordion" id="menu-dropdown">
+                  <div class="accordion-item accordionStyle">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button accordionStyle text" id="menu-dropdown-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="container" onclick="toggleIcon(this)">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                          <div class="bar3"></div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#menu-dropdown-button">
+                      <div class="accordion-body">
+                          <ul class="ulStyle">
+                              <li class="text menuText"><a href="index.html">Homepage</a></li>
+                              <li class="text menuText"><a href="aboutme.html">About Me</a></li>
+                              <li class="text menuText"><a href="aboutwebsite.html">About The Website</a></li>
+                              <li class="text menuText">CV</li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            <a href="aboutme.html"><h1 class="name text">Joe Brotchie</h1></a>
+          </nav>
+
+
+        </main>
+
+        <script>
+          let activeTransition = false
+          function toggleIcon(icon) {
+           if(!activeTransition) {
+              activeTransition = true;
+              icon.classList.toggle("change");
+              setTimeout(()=>{activeTransition = false}, 400)
+            }
+          }
+        </script>
+    </body>
+</html>

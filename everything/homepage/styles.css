@@ -1,0 +1,440 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:active {
+	color: black;
+}
+
+a:hover {
+	color: black;
+}
+
+
+.mainBackground {
+	height: 100%;
+	width: 100%;
+	background-color: aquamarine;
+	background-image: linear-gradient(aquamarine, white);
+}
+
+.navBackground {
+	display: inline-block;
+	width: 200px;
+	height: 100%;
+	margin-left: 0px;
+	background-color: white;
+	z-index: 2;
+	position: absolute;
+}
+.headerBackground {
+
+	display:inline-block;
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+}
+.text {
+	font-family: Verdana,sans-serif;
+}
+
+.accordionStyle {
+	min-width: 100px;
+	max-width: 200px;
+	background-color: black;
+	color: white;
+	border: none;
+}
+
+.ulStyle {
+	margin-left: -20px;
+	width: 100%;
+}
+
+.ulStyle > li {
+	margin-top: 7px;
+}
+li > a {
+	color: white;
+	text-decoration: none;
+}
+
+li > a:hover {
+	color: white;
+}
+.this {
+
+	font-size: 17.6875vw;
+	margin-top: 40%;
+	padding-left: 23%;
+	position: fixed;
+	display: inline-block;
+	margin-inline-start: 0%;
+}
+
+.is {
+
+	font-size: 13.6875vw;
+	margin-top: 70%;
+	padding-left: 50%;
+	position: fixed;
+	display: inline-block;
+	margin-inline-start: 0%;
+}
+
+.cs50x {
+
+	font-size: 19.6875vw;
+	margin-top: 95%;
+	padding-left: 23%;
+	position: fixed;
+	display: inline-block;
+	margin-inline-start: 0%;
+}
+
+
+.githubLink {
+	margin-top: 25px;
+	margin-right: 25px;
+	float: right;
+	max-height: 150px;
+}
+
+.name {
+	position: absolute;
+  	left: 0;
+  	bottom: 0;
+	margin-left: 20px;
+	margin-bottom: 40px;
+}
+
+.menuText {
+	font-size: 20px;
+}
+
+.aboutWebsiteTextP1 {
+	display: inline-block;
+	max-width: 80%;
+	font-size: 40px;
+	margin-left: 30%;
+	margin-right: 15%;
+	margin-top: 30%;
+}
+
+.aboutWebsiteTextP2 {
+	display: inline-block;
+	max-width: 80%;
+	font-size: 40px;
+	margin-left: 30%;
+	margin-right: 15%;
+}
+
+.aboutMeTextP1 {
+	display: inline-block;
+	max-width: 80%;
+	font-size: xx-large;
+	margin-left: 30%;
+	margin-right: 20%;
+	margin-top: 20%;
+}
+
+.aboutMeTextP2 {
+	display: inline-block;
+	max-width: 80%;
+	font-size: xx-large;
+	margin-left: 30%;
+	margin-right: 20%;
+}
+
+.randomThingsTitle {
+	display: inline-block;
+	max-width: 80%;
+	font-size: 50px;
+	margin-left: 30%;
+	margin-right: 20%;
+	margin-top: 10px;
+}
+
+.randomThings1 {
+	max-width: 80%;
+	font-size: 30px;
+	margin-left: 30%;
+	margin-right: 20%;
+	margin-top: 10%;
+}
+
+.randomThings {
+	max-width: 80%;
+	font-size: 30px;
+	margin-left: 30%;
+	margin-right: 20%;
+	margin-top: 10px;
+}
+
+#menu-dropdown {
+	position: absolute;
+	width: 200px;
+	border: none;
+}
+
+#menu-dropdown-button {
+	border: none;
+	background-color: black;
+	color: white;
+
+}
+
+#menu-dropdown-button:focus {
+	border: none;
+	box-shadow: none;
+}
+
+.accordion-button {
+	padding: 0px;
+}
+
+.accordion-button:not(.show)::after {
+	background-image: none;
+	content: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: none;
+	content: none;
+}
+
+/*medium screen*/
+@media only screen and (min-device-width: 600px) and (max-device-width: 999px){
+
+	.this {
+
+		font-size: 14.6875vw;
+		margin-top: 29%;
+		padding-left: 35%;
+		position: fixed;
+		display: inline-block;
+		margin-inline-start: 0%;
+	}
+
+	.is {
+
+		font-size: 11.6875vw;
+		margin-top: 53%;
+		padding-left: 55%;
+		position: fixed;
+		display: inline-block;
+		margin-inline-start: 0%;
+	}
+
+	.cs50x {
+
+		font-size: 16.6875vw;
+		margin-top: 75%;
+		padding-left: 30%;
+		position: fixed;
+		display: inline-block;
+		margin-inline-start: 0%;
+	}
+
+	.githubLink {
+		margin-top: 25px;
+		margin-right: 25px;
+		float: right;
+		max-height: 150px;
+	}
+
+	.aboutWebsiteTextP1 {
+		display: inline-block;
+		max-width: 80%;
+		font-size: 40px;
+		margin-left: 30%;
+		margin-right: 15%;
+		margin-top: 20%;
+	}
+
+	.aboutWebsiteTextP2 {
+		display: inline-block;
+		max-width: 80%;
+		font-size: 40px;
+		margin-left: 30%;
+		margin-right: 15%;
+	}
+
+	.container {
+		background-color: black;
+		display: inline-block;
+		cursor: pointer;
+		height: 80px;
+		padding-top: 20px;
+		padding-left: 40%;
+	  }
+
+	  .bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: white;
+		margin: 6px 0;
+		transition: .2s;
+	  }
+
+	  /* Rotate first bar */
+	  .change .bar1 {
+		transform: translate(0, 11px) rotate(-45deg);
+	  }
+
+	  /* Fade out the second bar */
+	  .change .bar2 {opacity: 0;}
+
+	  /* Rotate last bar */
+	  .change .bar3 {
+		transform: translate(0, -11px) rotate(45deg);
+	  }
+}
+
+/*large screen*/
+@media only screen and (min-device-width: 1000px){
+
+	.this {
+
+		font-size: 11.6875vw;
+		margin-top: 5%;
+		padding-left: 20%;
+		position: fixed;
+		display: inline-block;
+		margin-inline-start: 0%;
+	}
+
+	.is {
+
+		font-size: 10.6875vw;
+		margin-top: 17%;
+		padding-left: 39%;
+		position: fixed;
+		display: inline-block;
+		margin-inline-start: 0%;
+	}
+
+	.cs50x {
+
+		font-size: 16.6875vw;
+		margin-top: 26%;
+		padding-left: 17%;
+		position: fixed;
+		display: inline-block;
+		margin-inline-start: 0%;
+	}
+
+	.githubLink {
+		margin-top: 25px;
+		margin-right: 25px;
+		float: right;
+		max-height: 150px;
+	}
+
+	.aboutWebsiteTextP1 {
+		display: inline-block;
+		max-width: 80%;
+		font-size: xx-large;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 10%;
+	}
+
+	.aboutWebsiteTextP2 {
+		display: inline-block;
+		max-width: 80%;
+		font-size: xx-large;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	.aboutMeTextP1 {
+		display: inline-block;
+		max-width: 80%;
+		font-size: xx-large;
+		margin-left: 30%;
+		margin-right: 20%;
+		margin-top: 20%;
+	}
+
+	.aboutMeTextP2 {
+		display: inline-block;
+		max-width: 80%;
+		font-size: xx-large;
+		margin-left: 30%;
+		margin-right: 20%;
+	}
+
+	.container {
+		background-color: black;
+		display: inline-block;
+		cursor: pointer;
+		height: 80px;
+		padding-top: 20px;
+		padding-left: 40%;
+	  }
+
+	  .bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: white;
+		margin: 6px 0;
+		transition: .2s;
+	  }
+
+	  /* Rotate first bar */
+	  .change .bar1 {
+		transform: translate(0, 11px) rotate(-45deg);
+	  }
+
+	  /* Fade out the second bar */
+	  .change .bar2 {opacity: 0;}
+
+	  /* Rotate last bar */
+	  .change .bar3 {
+		transform: translate(0, -11px) rotate(45deg);
+	  }
+}
+
+
+
+.container {
+	background-color: black;
+	display: inline-block;
+	cursor: pointer;
+	height: 150px;
+	padding-top: 50px;
+	padding-left: 40%;
+  }
+
+  .bar1, .bar2, .bar3 {
+	width: 43.75px;
+	height: 6.25px;
+	background-color: white;
+	margin: 7.5px 0;
+	transition: .2s;
+  }
+
+  /* Rotate first bar */
+  .change .bar1 {
+	transform: translate(0, 13.75px) rotate(-45deg);
+  }
+
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+
+  /* Rotate last bar */
+  .change .bar3 {
+	transform: translate(0, -13.75px) rotate(45deg);
+  }
+
+  .menuText {
+	font-size: large;
+  }

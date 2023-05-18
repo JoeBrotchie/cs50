@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead class="tableHeadFont">
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>price</th>
+                <th>timestamp</th>
+            </tr>
+        </thead>
+        <tbody class="tableBodyFont">
+            {% for transaction in history %}
+                <tr>
+                    <td>{{ transaction["symbol"] }}</td>
+                    <td>{{ transaction["shares"] }}</td>
+                    <td>{{ transaction["price"] | usd }}</td>
+                    <td>{{ transaction["timestamp"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
